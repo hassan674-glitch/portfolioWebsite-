@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Saeed | SOFTWARE ENGINEER | DEVELOPER</title>
+    <meta name="description" content="Portfolio of Hassan Saeed - Software Engineering Student, Flutter Developer, and Data Science Enthusiast">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+          <a href="#" class="nav-logo" style="display: flex; align-items: center; gap: 10px;">
+    <img src="images\ProfilePic.jpeg" alt="Profile" 
+         style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+    HASSAN SAEED
+</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Hassan Saeed</h1>
+            <p class="hero-title">
+                <span class="typing-text" id="typingText"></span><span class="cursor"></span>
+            </p>
+            <p class="hero-bio">
+                Software Engineering student with a dual background in mobile development and Data Science. 
+                1 Year of professional Flutter experience. Building AI-driven products for the future.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="https://github.com/hassan674-glitch/hassan674-glitch.github.io/raw/main/CV%20Hassan%20Saeed.pdf" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/hassan674-glitch" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hassan-saeed-33a7523a2/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:hassankhankashmiri6@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">Passionate about creating innovative solutions through code</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image-wrapper reveal">
+                    <div class="about-image-ring-2"></div>
+                    <div class="about-image-ring"></div>
+                    <img src="images/ProfilePic.jpeg" alt="Hassan Saeed" class="about-image">
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        I'm a Software Engineering student at the University of Poonch with a unique dual background in 
+                        <strong>mobile development</strong> and <strong>Data Science</strong>. Having completed dedicated 
+                        6-month programs in both domains at AJK IT Excellence Center, I bring a versatile skill set to 
+                        every project.
+                    </p>
+                    <p>
+                        With 4 months of professional Flutter development experience at Kashir Tech, I've contributed to 
+                        4+ mobile applications across the full development cycle. I'm passionate about building 
+                        AI-driven products and targeting roles in Data Science or Software Engineering.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy teaching computer studies, reading technological articles, 
+                        playing chess, and exploring new places through tourism.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <p class="stat-label">Mobile Apps Built</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">1</span>
+                            <p class="stat-label">Year Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">60+</span>
+                            <p class="stat-label">Students Taught</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">3.2</span>
+                            <p class="stat-label">Current CGPA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">My Expertise</p>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Mobile Development -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="skill-category-title">Mobile Development</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Flutter</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Dart</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-category-title">Backend & Database</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Firebase</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">REST APIs</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+
+                <!-- State Management -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="skill-category-title">State Management</h3>
+                    </div>
+                    <div class="skill-tags" style="margin-top: 1rem;">
+                        <span class="skill-tag">GetX</span>
+                        <span class="skill-tag">Provider</span>
+                        <span class="skill-tag">BLoC</span>
+                    </div>
+                </div>
+
+                <!-- Data & AI -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="skill-category-title">Data & AI</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Data Science Fundamentals</span>
+                    </div>
+                </div>
+
+                <!-- Integrations -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3 class="skill-category-title">Integrations</h3>
+                    </div>
+                    <div class="skill-tags" style="margin-top: 1rem;">
+                        <span class="skill-tag">Google Maps API</span>
+                        <span class="skill-tag">Payment Gateways</span>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-category-title">Other</h3>
+                    </div>
+                    <div class="skill-tags" style="margin-top: 1rem;">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">MS Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">My Journey</p>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional path and achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">Aug 2025 – Jan 2026</p>
+                        <h3 class="timeline-title">Computer Studies Teacher</h3>
+                        <p class="timeline-company">PEBCA, Rawalakot</p>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Taught 60+ students MS Office, programming basics, and digital literacy</li>
+                                <li>Designed curriculum-aligned lesson plans for mixed skill levels</li>
+                                <li>Improved practical skills through hands-on exercises</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">Jun 2024 – Nov 2024</p>
+                        <h3 class="timeline-title">Mobile App Developer (Intern)</h3>
+                        <p class="timeline-company">Kashir Tech, Rawalakot</p>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Contributed to 4+ mobile apps using Flutter & Dart</li>
+                                <li>Built responsive UIs following Material Design principles</li>
+                                <li>Integrated REST APIs and handled error states</li>
+                                <li>Fixed bugs and participated in code reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">My Work</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of the projects I've built</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Hawkeye Travel App -->
+                <div class="project-card reveal">
+                    <img src="images/project-hawkeye.jpg" alt="Hawkeye Travel App" class="project-image">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Hawkeye Travel App</h3>
+                            <p class="project-tech">Flutter, Google Maps, REST APIs</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">
+                            A comprehensive travel discovery app featuring Google Maps integration, 
+                            location-based UI, and seamless travel planning experience.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Google Maps</span>
+                            <span class="project-tag">REST APIs</span>
+                        </div>
+                        <a href="https://github.com/hassan674-glitch/hawkeye-travel-app" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grocery App -->
+                <div class="project-card reveal">
+                    <img src="images/project-grocery.jpg" alt="Grocery App" class="project-image">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Grocery App</h3>
+                            <p class="project-tech">Flutter, Dart</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">
+                            An e-commerce style grocery shopping application with product listings, 
+                            cart management, and a clean, intuitive user interface.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Dart</span>
+                            <span class="project-tag">E-commerce</span>
+                        </div>
+                        <a href="https://github.com/hassan674-glitch/grocery-app" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Chat App -->
+                <div class="project-card reveal">
+                    <img src="images/project-chat.jpg" alt="Chat App" class="project-image">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Chat App</h3>
+                            <p class="project-tech">Flutter, Firebase, Dart</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">
+                            A real-time messaging application built with Firebase backend, 
+                            featuring instant messaging and user authentication.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Real-time</span>
+                        </div>
+                        <a href="https://github.com/hassan674-glitch/chat-app11002" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Todo App -->
+                <div class="project-card reveal">
+                    <img src="images/project-todo.jpg" alt="Todo App" class="project-image">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Todo App</h3>
+                            <p class="project-tech">Flutter, Local Storage, Dart</p>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">
+                            A task management app with local persistence, clean UI, and 
+                            intuitive task organization features.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Local Storage</span>
+                            <span class="project-tag">Productivity</span>
+                        </div>
+                        <a href="https://github.com/hassan674-glitch/todo-app" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">Credentials</p>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional certifications and achievements</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4>Mobile App Development</h4>
+                        <p class="cert-issuer">AJK IT Excellence Center</p>
+                        <p class="cert-year">2023</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4>Data Science</h4>
+                        <p class="cert-issuer">AJK IT Excellence Center</p>
+                        <p class="cert-year">2024</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4>Flutter Mobile Development Internship</h4>
+                        <p class="cert-issuer">Kashmir Tech, Rawalakot</p>
+                        <p class="cert-year">2024</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4>Youth Exchange Program</h4>
+                        <p class="cert-issuer">University of Poonch - Entrepreneurship & Business Dev</p>
+                        <p class="cert-year">2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">Academic Background</p>
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="edu-card reveal">
+                <div class="edu-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="edu-degree">B.S. Software Engineering</h3>
+                <p class="edu-school">University of Poonch, Rawalakot</p>
+                <div class="edu-meta">
+                    <div class="edu-meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Expected Graduation: Nov 2027</span>
+                    </div>
+                    <div class="edu-meta-item">
+                        <i class="fas fa-star"></i>
+                        <span>CGPA: 3.2 / 4.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Open to opportunities in Data Science and Software Engineering</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>Ready to collaborate?</h3>
+                    <p>I'm currently looking for opportunities in Data Science and Software Engineering. 
+                    Feel free to reach out if you'd like to discuss a project or opportunity.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:hassankhankashmiri6@gmail.com" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <p class="contact-link-label">Email</p>
+                                <p class="contact-link-value">hassankhankashmiri6@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:03235716456" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <p class="contact-link-label">Phone</p>
+                                <p class="contact-link-value">0323-5716456</p>
+                            </div>
+                        </a>
+                        <div class="contact-link" style="cursor: default;">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <p class="contact-link-label">Location</p>
+                                <p class="contact-link-value">Rawalakot, Azad Kashmir</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://github.com/hassan674-glitch" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hassan-saeed-33a7523a2/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:hassankhankashmiri6@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-visual reveal">
+                    <div class="contact-illustration">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            © 2025 <span>Hassan Saeed</span>. Built with passion and code.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ===== TYPING EFFECT =====
+        const typingTexts = [ "Software Engineer","App Development","Web Development", "Artificial Intelligence" ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+
+        function typeEffect() {
+            const currentText = typingTexts[textIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % typingTexts.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        // Start typing effect
+        typeEffect();
+
+        // ===== PARTICLE EFFECT =====
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animationId;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = 0;
+                if (this.y < 0) this.y = canvas.height;
+            }
+
+            draw() {
+                ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const particleCount = Math.min(50, Math.floor((canvas.width * canvas.height) / 15000));
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function connectParticles() {
+            const maxDistance = 100;
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < maxDistance) {
+                        const opacity = (1 - distance / maxDistance) * 0.2;
+                        ctx.strokeStyle = `rgba(0, 212, 255, ${opacity})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        let frameCount = 0;
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Render every 2nd frame for performance (30fps)
+            if (frameCount % 2 === 0) {
+                particles.forEach(particle => {
+                    particle.update();
+                    particle.draw();
+                });
+                connectParticles();
+            }
+            frameCount++;
+            
+            animationId = requestAnimationFrame(animateParticles);
+        }
+
+        // Initialize particles
+        resizeCanvas();
+        initParticles();
+        animateParticles();
+
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            initParticles();
+        });
+
+        // Pause particles when not visible
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    cancelAnimationFrame(animationId);
+                } else {
+                    animateParticles();
+                }
+            });
+        }, { threshold: 0.1 });
+
+        heroObserver.observe(document.querySelector('.hero'));
+
+        // ===== SCROLL REVEAL =====
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    // Animate skill bars when visible
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const skill = bar.getAttribute('data-skill');
+                        bar.style.width = skill + '%';
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ===== NAVBAR SCROLL EFFECT =====
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+
+        window.addEventListener('scroll', () => {
+            // Add scrolled class to navbar
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Active link highlighting
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ===== MOBILE NAVIGATION =====
+        const navToggle = document.getElementById('navToggle');
+        const navLinksContainer = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+            });
+        });
+
+        // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
